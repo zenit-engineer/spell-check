@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: ZENIT
+      changes:
+        - createTable:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: id
+                  autoIncrement: true
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: albanian_dictionary_pk
+                    nullable: false
+              - column:
+                  name: word
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
