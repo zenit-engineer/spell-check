@@ -1,9 +1,12 @@
 package com.zenit.spellcheck.serviceImpl;
 
+import com.zenit.spellcheck.enums.SpellCheckResponse;
+import com.zenit.spellcheck.repository.SpellCheckRepository;
 import com.zenit.spellcheck.service.SpellCheckService;
 import com.zenit.spellcheck.util.ResponseJsonBody;
+import com.zenit.spellcheck.util.ValidationErrors;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import me.xdrop.fuzzywuzzy.FuzzySearch;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -11,80 +14,51 @@ import java.util.*;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class SpellCheckServiceImpl implements SpellCheckService{
+
+    private final SpellCheckRepository spellCheckRepository;
 
     @Override
     public ResponseJsonBody spellCheck(String word) {
 
-        //TODO: fullfill validation errors if API is being hit by sending word.length() < 3
+        List<String> validationErrors = new ArrayList<>();
 
-        /* dataList - is made for testing purposes, and it is serving as a mini database */
-        List<String> dataList = Arrays.asList(
+        boolean isValidString = ValidationErrors.isValidString(word);
 
-                "përshëndetje",
-                "tung",
-                "kam",
-                "jam",
-                "dua",
-                "shkoj",
-                "luftoj",
-                "fushi",
-                "fushas",
-                "fusha",
-                "fushv"
+        if (!isValidString){
 
-        );
+            validationErrors.add(SpellCheckResponse.WORD_MUST_CONTAIN_ONLY_LETTERS.getMessage());
 
-        /* listOfMatchingWords - is the final list that contains the words that are being matched by crossing the ratio */
-        TreeMap<String, Integer> mapOfMatchingWords = new TreeMap<>();
-        int minimalAssignedRatio = 50;
+        }else if (word.length() < 3){
 
-        for (String element : dataList) {
-
-            int ratio = FuzzySearch.ratio(word, element);
-
-            if (ratio > minimalAssignedRatio) {
-
-                mapOfMatchingWords.put(element, ratio);
-
-            }
+            validationErrors.add(SpellCheckResponse.WORD_MUST_HAVE_MORE_THAN_TWO_LETTERS.getMessage());
 
         }
-        log.info("List of all matching words that crossed assigned ratio {}", mapOfMatchingWords);
 
-        TreeMap<String, Integer> topThreeMap = new TreeMap<>();
-        if (mapOfMatchingWords.size() > 3) {
+        if (!validationErrors.isEmpty()){
 
-            // Create a new TreeMap with the top three entries
-            topThreeMap = mapOfMatchingWords.entrySet()
-                    .stream()
-                    .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                    .limit(3)
-                    .collect(TreeMap::new, (m, e) -> m.put(e.getKey(), e.getValue()), Map::putAll);
-            log.info("Final map of three elements to be considered {}", topThreeMap);
+            return new ResponseJsonBody(
+                    HttpStatus.BAD_REQUEST,
+                    SpellCheckResponse.RESTRUCTURE_YOU_REQUEST.getMessage(),
+                    new ArrayList<>(),
+                    validationErrors
+            );
 
         }
-        topThreeMap = mapOfMatchingWords.entrySet()
-                .stream()
-                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                .collect(TreeMap::new, (m, e) -> m.put(e.getKey(), e.getValue()), Map::putAll);
 
-        // Get a List of the keys from topThreeMap
-        List<String> bestMatchingWords = new ArrayList<>(topThreeMap.keySet());
-        log.info("List of the best matching words to be returned {}", bestMatchingWords);
+        List<String> bestMatchingWords = spellCheckRepository.findWordBySimilarityScore(word);
 
         return new ResponseJsonBody(
 
                 HttpStatus.OK,
-                "Successfully Retrieved!",
+                SpellCheckResponse.SUCCESSFULLY_RETRIEVED.getMessage(),
                 bestMatchingWords,
                 Collections.emptyList()
 
         );
 
-
     }
-
 
 }
 
