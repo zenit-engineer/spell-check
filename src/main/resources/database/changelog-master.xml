@@ -5,6 +5,7 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <include file="database/v1.0_create_albanian_language_table.yaml"/>
-
+    <include file="database/v1.0_create_albanian_dictionary_table.yaml"/>
+    <include file="database/v2.0_insert_data_to_albanian_dictionary_table.yaml"/>
+    <include file="database/v3.0_get_pg_trm_extension_in_psql.yaml"/>
 </databaseChangeLog>

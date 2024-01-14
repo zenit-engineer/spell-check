@@ -16,6 +16,6 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: word
-                  type: varchar(50)
+                  type: varchar(255)
                   constraints:
                     nullable: false
