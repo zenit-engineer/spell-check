@@ -1,4 +1,4 @@
-package com.zenit.spellcheck.serviceImpl;
+package com.zenit.spellcheck.service_implementation;
 
 import com.zenit.spellcheck.enums.SpellCheckResponse;
 import com.zenit.spellcheck.repository.SpellCheckRepository;
