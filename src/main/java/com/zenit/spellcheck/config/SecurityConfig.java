@@ -11,13 +11,15 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity
 public class SecurityConfig {
 
+    /* Ip 0:0:0:0:0:0:0:1 is given for development purposes locally otherwise in cloud
+    * environment it must be taken real ip of the device */
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         http.authorizeRequests(authorizeRequests ->
                         authorizeRequests
                                 .antMatchers(HttpMethod.GET, "/api/v1/spell-check/match")
-                                .hasIpAddress("192.168.0.37")
+                                .hasIpAddress("0:0:0:0:0:0:0:1")
                                 .antMatchers("/api/v1/spell-check/test/**")
                                 .permitAll()
                 );
