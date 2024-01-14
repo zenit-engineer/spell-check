@@ -1,14 +1,13 @@
 package com.zenit.spellcheck.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.math.BigInteger;
 
 @Getter
@@ -16,11 +15,13 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 @Table(name = "albanian_dictionary")
 public class AlbanianDictionary {
 
-    @Column(name = "id")
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private BigInteger id;
 
     @Column(name = "word")
