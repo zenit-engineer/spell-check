@@ -21,10 +21,6 @@ public class SpellCheckerController {
 
     private final SpellCheckService spellCheckService;
 
-    @GetMapping("/test")
-    public String test(){
-        return "Test";
-    }
 
     @GetMapping("/match")
     public ResponseEntity<ResponseJsonBody> spellCheck(@RequestParam String word){
