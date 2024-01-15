@@ -20,7 +20,7 @@ public class SecurityConfig {
                         authorizeRequests
                                 .antMatchers(HttpMethod.GET, "/api/v1/spell-check/match")
                                 .hasIpAddress("0:0:0:0:0:0:0:1")
-                                .antMatchers("/api/v1/spell-check/test/**")
+                                .antMatchers("/api/v1/spell-check/**")
                                 .permitAll()
                 );
 

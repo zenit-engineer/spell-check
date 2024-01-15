@@ -6,10 +6,7 @@ import com.zenit.spellcheck.util.ResponseJsonBody;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -23,9 +20,13 @@ public class SpellCheckerController {
 
 
     @GetMapping("/match")
-    public ResponseEntity<ResponseJsonBody> spellCheck(@RequestParam String word){
+    public ResponseEntity<ResponseJsonBody> spellCheck(
+            @RequestHeader String key,
+            @RequestHeader String ip,
+            @RequestHeader String language,
+            @RequestParam String word){
 
-        ResponseJsonBody updateProjectByIdResponse = spellCheckService.spellCheck(word);
+        ResponseJsonBody updateProjectByIdResponse = spellCheckService.spellCheck(key, ip, language, word);
 
         return new ResponseEntity<>(
 

@@ -20,21 +20,9 @@ public class SpellCheckServiceImpl implements SpellCheckService{
     private final SpellCheckRepository spellCheckRepository;
 
     @Override
-    public ResponseJsonBody spellCheck(String word) {
+    public ResponseJsonBody spellCheck(String key, String ip, String language, String word) {
 
-        List<String> validationErrors = new ArrayList<>();
-
-        boolean isValidString = ValidationErrors.isValidString(word);
-
-        if (!isValidString){
-
-            validationErrors.add(SpellCheckResponse.WORD_MUST_CONTAIN_ONLY_LETTERS.getMessage());
-
-        }else if (word.length() < 3){
-
-            validationErrors.add(SpellCheckResponse.WORD_MUST_HAVE_MORE_THAN_TWO_LETTERS.getMessage());
-
-        }
+        List<String> validationErrors = checkValidations(key, language, word);
 
         if (!validationErrors.isEmpty()){
 
@@ -43,6 +31,15 @@ public class SpellCheckServiceImpl implements SpellCheckService{
                     SpellCheckResponse.RESTRUCTURE_YOU_REQUEST.getMessage(),
                     new ArrayList<>(),
                     validationErrors
+            );
+
+        } else if (!ip.equals("0:0:0:0:0:0:0:1")) {
+
+            return new ResponseJsonBody(
+                    HttpStatus.FORBIDDEN,
+                    SpellCheckResponse.YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_API.getMessage(),
+                    new ArrayList<>(),
+                    new ArrayList<>()
             );
 
         }
@@ -58,6 +55,37 @@ public class SpellCheckServiceImpl implements SpellCheckService{
 
         );
 
+    }
+
+    private static List<String> checkValidations(String key, String language, String word) {
+
+        List<String> validationErrors = new ArrayList<>();
+
+        boolean isValidString = ValidationErrors.isValidString(word);
+
+        if (!isValidString){
+
+            validationErrors.add(SpellCheckResponse.WORD_MUST_CONTAIN_ONLY_LETTERS.getMessage());
+
+        }else if (word.length() < 3){
+
+            validationErrors.add(SpellCheckResponse.WORD_MUST_HAVE_MORE_THAN_TWO_LETTERS.getMessage());
+
+        } else if (!key.equals("2001")) {
+
+            validationErrors.add(SpellCheckResponse.WRONG_KEY.getMessage());
+
+        } else if (
+                !language.equalsIgnoreCase("EN")
+                && !language.equalsIgnoreCase("FR")
+                && !language.equalsIgnoreCase("DE")
+                && !language.equalsIgnoreCase("SP")) {
+
+            validationErrors.add(SpellCheckResponse.INVALID_LANGUAGE.getMessage());
+
+        }
+
+        return validationErrors;
     }
 
 }
