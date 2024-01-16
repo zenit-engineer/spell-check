@@ -5,4 +5,4 @@ COPY mvnw pom.xml ./
 RUN chmod a+rx ./mvnw
 RUN ./mvnw dependency:resolve
 COPY src ./src
-CMD ["./mvnw", "spring-boot: "]
+CMD ["./mvnw", "spring-boot:run"]
