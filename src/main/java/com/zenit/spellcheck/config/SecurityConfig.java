@@ -12,14 +12,14 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     /* Ip 0:0:0:0:0:0:0:1 is given for development purposes locally otherwise in cloud
-    * environment it must be taken real ip of the device */
+    * environment it must be taken real ip of the device (0:0:0:0:0:0:0:1 - my device in localhost | 172.17.0.1 my device when in container )*/
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         http.authorizeRequests(authorizeRequests ->
                         authorizeRequests
                                 .antMatchers(HttpMethod.GET, "/api/v1/spell-check/match")
-                                .hasIpAddress("0:0:0:0:0:0:0:1")
+                                .hasIpAddress("172.17.0.1")
                                 .antMatchers("/api/v1/spell-check/**")
                                 .permitAll()
                 );
