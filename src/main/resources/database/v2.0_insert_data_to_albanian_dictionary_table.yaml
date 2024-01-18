@@ -69,3 +69,993 @@ databaseChangeLog:
               - column:
                   name: word
                   value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'përshëndetje'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'tung'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'kam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'jam'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'dua'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'shkoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'luftoj'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushi'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushas'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fusha'
+        - insert:
+            tableName: albanian_dictionary
+            columns:
+              - column:
+                  name: word
+                  value: 'fushv'
