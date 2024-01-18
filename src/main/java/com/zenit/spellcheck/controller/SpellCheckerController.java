@@ -1,6 +1,5 @@
 package com.zenit.spellcheck.controller;
 
-
 import com.zenit.spellcheck.service.SpellCheckService;
 import com.zenit.spellcheck.util.ResponseJsonBody;
 import lombok.RequiredArgsConstructor;
@@ -13,11 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-@RequestMapping(value = "api/v1/spell-check")
+@RequestMapping(value = "/api/v1/spell-check")
 public class SpellCheckerController {
 
     private final SpellCheckService spellCheckService;
-
 
     @GetMapping("/match")
     public ResponseEntity<ResponseJsonBody> spellCheck(
@@ -44,12 +42,15 @@ public class SpellCheckerController {
 
     }
 
-    @GetMapping("/test")
-    public String test(){
+//    @GetMapping("/consume")
+//    public String consume(){
+//
+//        // Send message to Kafka to notify the email microservice
+//        return "Spell check completed. Email microservice notified.";
+//
+//    }
 
-        return "test";
 
-    }
 
 }
 
