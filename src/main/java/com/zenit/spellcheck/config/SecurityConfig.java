@@ -19,7 +19,7 @@ public class SecurityConfig {
         http.authorizeRequests(authorizeRequests ->
                         authorizeRequests
                                 .antMatchers(HttpMethod.GET, "/api/v1/spell-check/match")
-                                .hasIpAddress("172.17.0.1")
+                                .hasIpAddress("0:0:0:0:0:0:0:1")
                                 .antMatchers("/api/v1/spell-check/**")
                                 .permitAll()
                 );

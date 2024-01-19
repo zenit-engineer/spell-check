@@ -51,7 +51,7 @@ public class SpellCheckServiceImpl implements SpellCheckService{
                 HttpStatus.OK,
                 SpellCheckResponse.SUCCESSFULLY_RETRIEVED.getMessage(),
                 bestMatchingWords,
-                Collections.emptyList()
+                new ArrayList<>()
 
         );
 
