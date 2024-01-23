@@ -20,7 +20,7 @@ public class SpellCheckServiceImpl implements SpellCheckService{
     private final SpellCheckRepository spellCheckRepository;
 
     @Override
-    public ResponseJsonBody spellCheck(String key, String ip, String language, String word) {
+    public ResponseJsonBody spellCheck(String key, String language, String word) {
 
         List<String> validationErrors = checkValidations(key, language, word);
 
@@ -33,16 +33,18 @@ public class SpellCheckServiceImpl implements SpellCheckService{
                     validationErrors
             );
 
-        } else if (!ip.equals("0:0:0:0:0:0:0:1")) {
-
-            return new ResponseJsonBody(
-                    HttpStatus.FORBIDDEN,
-                    SpellCheckResponse.YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_API.getMessage(),
-                    new ArrayList<>(),
-                    new ArrayList<>()
-            );
-
         }
+
+//        else if (!ip.equals("0:0:0:0:0:0:0:1")) {
+//
+//            return new ResponseJsonBody(
+//                    HttpStatus.FORBIDDEN,
+//                    SpellCheckResponse.YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_API.getMessage(),
+//                    new ArrayList<>(),
+//                    new ArrayList<>()
+//            );
+//
+//        }
 
         List<String> bestMatchingWords = spellCheckRepository.findWordBySimilarityScore(word);
 
@@ -63,7 +65,7 @@ public class SpellCheckServiceImpl implements SpellCheckService{
 
         boolean isValidString = ValidationErrors.isValidString(word);
 
-        if (!isValidString){
+        if (word == null || word.equals("") || !isValidString){
 
             validationErrors.add(SpellCheckResponse.WORD_MUST_CONTAIN_ONLY_LETTERS.getMessage());
 
@@ -71,15 +73,16 @@ public class SpellCheckServiceImpl implements SpellCheckService{
 
             validationErrors.add(SpellCheckResponse.WORD_MUST_HAVE_MORE_THAN_TWO_LETTERS.getMessage());
 
-        } else if (!key.equals("2001")) {
+        } else if (key == null || !key.equals("2001")) {
 
             validationErrors.add(SpellCheckResponse.WRONG_KEY.getMessage());
 
         } else if (
-                !language.equalsIgnoreCase("EN")
+                language == null ||
+                (!language.equalsIgnoreCase("EN")
                 && !language.equalsIgnoreCase("FR")
                 && !language.equalsIgnoreCase("DE")
-                && !language.equalsIgnoreCase("SP")) {
+                && !language.equalsIgnoreCase("SP"))) {
 
             validationErrors.add(SpellCheckResponse.INVALID_LANGUAGE.getMessage());
 
