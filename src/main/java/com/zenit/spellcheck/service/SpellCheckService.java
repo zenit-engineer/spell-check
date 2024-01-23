@@ -5,7 +5,7 @@ import com.zenit.spellcheck.util.ResponseJsonBody;
 
 public interface SpellCheckService{
 
-    ResponseJsonBody spellCheck(String key, String ip, String language, String word);
+    ResponseJsonBody spellCheck(String key, String language, String word);
 
 }
 

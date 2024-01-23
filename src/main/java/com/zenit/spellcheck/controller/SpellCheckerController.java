@@ -20,11 +20,11 @@ public class SpellCheckerController {
     @GetMapping("/match")
     public ResponseEntity<ResponseJsonBody> spellCheck(
             @RequestHeader String key,
-            @RequestHeader String ip,
             @RequestHeader String language,
-            @RequestParam String word){
+            @RequestParam String word
+    ){
 
-        ResponseJsonBody updateProjectByIdResponse = spellCheckService.spellCheck(key, ip, language, word);
+        ResponseJsonBody updateProjectByIdResponse = spellCheckService.spellCheck(key, language, word);
 
         return new ResponseEntity<>(
 
